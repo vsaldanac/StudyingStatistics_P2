@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_borderer_primarylight"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/dialogTitleNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:text="Nombre del concepto:"/>
+
+    <EditText
+        android:id="@+id/dialogNameEt"
+        android:layout_below="@id/dialogTitleNameTv"
+        android:inputType="text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogTitleGradeTv"
+        android:layout_below="@id/dialogNameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:text="Nivel de Enseñanza Media:"/>
+
+
+    <EditText
+        android:id="@+id/dialogGradeEt"
+        android:layout_below="@id/dialogNameEt"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="number"
+        android:hint="1, 2, 3 o 4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/dialogDescriptionTv"
+        android:layout_below="@id/dialogTitleGradeTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textStyle="bold"
+        android:text="Definición del concepto:"/>
+
+    <EditText
+        android:id="@+id/dialogDescriptionEt"
+        android:layout_below="@+id/dialogDescriptionTv"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:inputType="text"
+        android:lines="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_below="@+id/dialogDescriptionEt"
+        android:layout_margin="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"/>
+
+</RelativeLayout>
